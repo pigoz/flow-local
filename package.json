@@ -1,6 +1,6 @@
 {
   "name": "flow-local",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "The local flow executor.",
   "files": [
     "bin"

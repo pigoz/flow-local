@@ -13,13 +13,7 @@ function getLocalEslint(basedir) {
   }
 }
 
-//------------------------------------------------------------------------------
-// Main
-//------------------------------------------------------------------------------
-/* flow-disable no-process-exit, no-console */
-
 const cwd = process.cwd();
-
 debug('START', process.argv);
 debug('ROOT', cwd);
 
@@ -30,8 +24,7 @@ if (binPath != null) {
 } else {
   // eslint-disable-next-line no-console
   console.error(chalk.red.bold(
-    'Cannot find local ESLint!\n' +
-    'Please install ESLint by `npm install flow --save-dev`.\n',
-  ));
+    'Cannot find local flow-bin!\n' +
+    'Please install flow-bin by `yarn add flow-bin -D`.\n'));
   process.exit(1);
 }
