@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const debug = require('debug')('flow-local');
 const resolve = require('resolve').sync;
 const chalk = require('chalk');
