@@ -1,0 +1,41 @@
+{
+  "name": "flow-local",
+  "version": "0.1",
+  "description": "The local flow executor.",
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "flow": "bin/flow.js",
+    "flow-local": "bin/flow.js"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "lint": "eslint bin"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "debug": "^2.2.0",
+    "resolve": "^1.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pigoz/flow-local.git"
+  },
+  "keywords": [
+    "flow",
+    "cli"
+  ],
+  "author": "Stefano Pigozzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pigoz/flow-local/issues"
+  },
+  "homepage": "https://github.com/pigoz/flow-local#readme"
+}
