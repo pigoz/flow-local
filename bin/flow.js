@@ -3,7 +3,7 @@ const debug = require('debug')('flow-local');
 const resolve = require('resolve').sync;
 const chalk = require('chalk');
 
-function getLocalEslint(basedir) {
+function getLocalFlow(basedir) {
   try {
     const binPath = resolve('flow-bin/cli.js', { basedir });
     debug('FOUND', binPath);
@@ -18,7 +18,7 @@ const cwd = process.cwd();
 debug('START', process.argv);
 debug('ROOT', cwd);
 
-const binPath = getLocalEslint(cwd);
+const binPath = getLocalFlow(cwd);
 if (binPath != null) {
   // eslint-disable-next-line import/no-dynamic-require, global-require
   require(binPath);
