@@ -4,7 +4,7 @@
 [![Downloads/month](https://img.shields.io/npm/dm/flow-local.svg)](https://www.npmjs.com/package/flow-local)
 [![Dependency Status](https://david-dm.org/pigoz/flow-local.svg)](https://david-dm.org/pigoz/flow-local)
 
-The local [flow](https://github.com/flow/flow) executor.
+The local [flow](https://github.com/facebook/flow) executor.
 
 ## Installation
 
